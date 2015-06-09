@@ -53,6 +53,9 @@ class Zeromq < Formula
     system "./configure", *args
     system "make"
     system "make", "install"
+
+    man3.install Dir["doc/*.3"]
+    man7.install Dir["doc/*.7"]
   end
 
   test do

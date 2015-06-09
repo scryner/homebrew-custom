@@ -40,8 +40,8 @@ class Czmq < Formula
     system "./configure", *args
     system "make", "install"
 
-    man3.install "doc/*.3"
-    man7.install "doc/*.7"
+    man3.install Dir["doc/*.3"]
+    man7.install Dir["doc/*.7"]
 
     rm Dir["#{bin}/*.gsl"]
   end
