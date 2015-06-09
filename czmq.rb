@@ -2,8 +2,8 @@ require "formula"
 
 class Czmq < Formula
   homepage "http://czmq.zeromq.org/"
-  url "http://download.zeromq.org/czmq-3.0.0-rc1.tar.gz"
-  sha1 "2263bc4f4aa6a25e8ec3bb49973eccfcc1d5fa25"
+  url "http://download.zeromq.org/czmq-3.0.2.tar.gz" 
+  sha1 ""
   revision 1
 
   bottle do
