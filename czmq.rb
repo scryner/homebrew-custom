@@ -4,7 +4,7 @@ class Czmq < Formula
   homepage "http://czmq.zeromq.org/"
   url "http://download.zeromq.org/czmq-3.0.2.tar.gz" 
   sha256 "8bca39ab69375fa4e981daf87b3feae85384d5b40cef6adbe9d5eb063357699a"
-  revision 1
+  revision 3
 
   bottle do
     cellar :any
@@ -39,6 +39,10 @@ class Czmq < Formula
     system "./autogen.sh" if build.head?
     system "./configure", *args
     system "make", "install"
+
+    man3.install "doc/*.3"
+    man7.install "doc/*.7"
+
     rm Dir["#{bin}/*.gsl"]
   end
 
