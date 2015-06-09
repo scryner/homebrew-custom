@@ -20,14 +20,7 @@ class Zeromq < Formula
 
   stable do
     url "http://download.zeromq.org/zeromq-4.1.1.tar.gz"
-    sha1 ""
-
-    patch do
-      # enable --without-libsodium on libzmq < 4.1
-      # zeromq/zeromq4-x#105
-      url "https://gist.githubusercontent.com/minrk/478aab66adf7016158ff/raw/b5ea2d61c3f66db6ff3e266b76d1bec4ad4a238b/without-libsodium.patch"
-      sha1 "68543ff1b0f64b22994cb13b4d24bce8f76cf431"
-    end
+    sha256 "43d61e5706b43946aad4a661400627bcde9c63cc25816d4749c67b64c3dab8db"
   end
 
   option :universal
