@@ -24,7 +24,7 @@ class Czmq < Formula
   option :universal
 
   depends_on "pkg-config" => :build
-  depends_on "zeromq"
+  depends_on "scryner/custom/zeromq"
   depends_on "libsodium" => :recommended
 
   def install
